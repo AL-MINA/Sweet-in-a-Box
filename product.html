@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--
+    Activity: Final Project \ Products
+    Author: Almina Tanglao
+    Section: WD-202
+    Date: Nov 19, 2023
+    -->
+    <title>Sweets in a Box | Products</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
+    <link rel="stylesheet" href="CSS/style.min.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="images/Cookieicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class = "mobile-nav"> 
+        <img class="logo_box" src="images/box.png" alt="mobile logo">
+        <div id = "menu-links"> 
+            <a href = "index.html">Home</a>
+            <a href = "about.html">About Us</a>
+            <a href = "product.html">Products</a>  
+            <a href = "contact.html">Contact</a>
+        </div> 
+            <a class = "menu-icon" onclick = "hamburger()"> 
+            <div>&#9776;</div></a> 
+    </nav>  
+    <header>
+        <div class="banner" id="nav-menu">   
+            <div class="navbar">
+                <img src="images/sweets.png" class="logo" alt="Sweet in a Box Logo">
+                <ul class="nav-list">
+                    <li class="navbar_list"><a href="index.html">Home</a></li>
+                    <li class="navbar_list"><a href="about.html">About Us</a></li>
+                    <li class="navbar_list"><a href="product.html">Products</a></li>
+                    <li class="navbar_list"><a href="contact.html">Contact Us</a></li>
+                </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <div id="price">
+            <br>
+            <h2>See the details below.</h2>
+            <table>
+                <caption>COOKIES PRICE RANGE</caption>
+                <tr>
+                    <th>Flavors</th>
+                    <th>Retail per box for 45g</th>
+                    <th>Supplier per box for 45g</th>
+                    <th>Retail per piece 100g</th>
+                    <th>Supplier per piece for 100g</th>
+                </tr>
+                <tr>
+                    <td class="td_title">Chocolate Chunks</td>
+                    <td>₱ 270</td>
+                    <td>₱ 230</td>
+                    <td>₱ 80</td>
+                    <td>₱ 60</td>
+                </tr>
+                <tr>
+                    <td class="td_title">Chocolate Smore's</td>
+                    <td>₱ 310</td>
+                    <td>₱ 270</td>
+                    <td>₱ 85</td>
+                    <td>₱ 65</td>
+                </tr>
+                <tr>
+                    <td class="td_title">Triple Chocolate</td>
+                    <td>₱ 435</td>
+                    <td>₱ 395</td>
+                    <td>₱ 95</td>
+                    <td>₱ 75</td>
+                </tr>
+                <tr>
+                    <td class="td_title">Oatmeal</td>
+                    <td>₱ 435</td>
+                    <td>₱ 395</td>
+                    <td>₱ 95</td>
+                    <td>₱ 75</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="form">
+            <div class="form_container">
+                <h2 class="form_h2">Complete the form below, and one of our staff members will contact you.</h2>
+                <form class="form-grid">
+                    <div class="form-flex">
+                        <fieldset class="field-right">
+                            <legend>Customer Information</legend>
+                            <label for="fName">First Name:</label>
+                            <input type="text" name="fName" id="fName">
+                            <label for="lName">Last Name:</label>
+                            <input type="text" name="lName" id="lName">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Product Interest</legend>
+                            <p>I am interested in:</p>
+                            <label for="tasting"><input type="checkbox" name="interest" id="tasting" value="Tasting Cookies">Taste it</label>
+                            <label for="reselling"><input type="checkbox" name="interest" id="reselling" value="Reselling Cookies">Be a reseller</label>
+                            <label for="supplies"><input type="checkbox" name="interest" id="supplies" value="Supplies Cookies">Get supplies</label>
+                            <label for="questions" class="form_h2">What questions do you have for us?</label>
+                            <textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+                        </fieldset>
+                    </div>
+                </form>
+                <div class="botton_container">
+                    <a href="#"><input type="submit" id="submit" class="form_button" value="Submit"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by: Almina Tanglao</p>
+        <a href="" target="_blank"><i class="ri-facebook-fill"></i></a>
+        <a href="https://www.instagram.com/_sweets.in.a_box/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"></a><i class="ri-instagram-fill"></i></a>
+        <p>sweetinabox.net</p>
+    </footer>
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
