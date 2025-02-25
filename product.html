@@ -10,7 +10,7 @@
     <title>Sweets in a Box | Products</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
-    <link rel="stylesheet" href="CSS/style.min.css" type="text/css">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="images/Cookieicon.png" type="image/x-icon">
@@ -87,44 +87,55 @@
         </div>
 
         <div id="form">
-            <div class="form_container">
-                <h2 class="form_h2">Complete the form below, and one of our staff members will contact you.</h2>
-                <form class="form-grid">
-                    <div class="form-flex">
-                        <fieldset class="field-right">
-                            <legend>Customer Information</legend>
-                            <label for="fName">First Name:</label>
-                            <input type="text" name="fName" id="fName">
-                            <label for="lName">Last Name:</label>
-                            <input type="text" name="lName" id="lName">
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" id="email">
-                            <label for="phone">Phone:</label>
-                            <input type="tel" id="phone" name="phone">
-                        </fieldset>
-                        <fieldset>
-                            <legend>Product Interest</legend>
-                            <p>I am interested in:</p>
-                            <label for="tasting"><input type="checkbox" name="interest" id="tasting" value="Tasting Cookies">Taste it</label>
-                            <label for="reselling"><input type="checkbox" name="interest" id="reselling" value="Reselling Cookies">Be a reseller</label>
-                            <label for="supplies"><input type="checkbox" name="interest" id="supplies" value="Supplies Cookies">Get supplies</label>
-                            <label for="questions" class="form_h2">What questions do you have for us?</label>
-                            <textarea name="questions" id="questions" rows="5" cols="35"></textarea>
-                        </fieldset>
-                    </div>
-                </form>
-                <div class="botton_container">
-                    <a href="#"><input type="submit" id="submit" class="form_button" value="Submit"></a>
-                </div>
-            </div>
+            <div class="form-container">
+    <div class="form-section">
+        <div class="section-heading">Customer Information</div>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name">
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+
+    <div class="form-section">
+        <div class="section-heading">Product Interest</div>
+        <p>I am interested in:</p>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="taste" name="interest">
+            <label for="taste">Taste it</label>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="reseller" name="interest">
+            <label for="reseller">Be a reseller</label>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="supplies" name="interest">
+            <label for="supplies">Get supplies</label>
+        </div>
+
+        <label for="questions">What questions do you have for us?</label>
+        <textarea id="questions" name="questions"></textarea>
+    </div>
+</div>
+
+<button type="submit">Submit</button>
+
         </div>
     </main>
 
-    <footer>
+     <footer>
         <p>Created by: Almina Tanglao</p>
-        <a href="" target="_blank"><i class="ri-facebook-fill"></i></a>
-        <a href="https://www.instagram.com/_sweets.in.a_box/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"></a><i class="ri-instagram-fill"></i></a>
-        <p>sweetinabox.net</p>
+        <a href="https://www.facebook.com" target="_blank"><i class="ri-facebook-fill"></i></a>
+        <p><a href="https://sweetinabox.netlify.app">sweetinabox</a></p>
     </footer>
     <script src="Scripts/main.js"></script>
 </body>
